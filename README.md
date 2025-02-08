@@ -22,10 +22,10 @@ git init
 touch README.md .gitignore
 ```
 Add in .gitignore
-/node_modules
-/build
-/dist
-.DS_Store
+- /node_modules
+- /build
+- /dist
+- .DS_Store
 
 NB: More ignores can be added as your project grow but for now these are the most important to add if you want to push the project to GitHub 
 
