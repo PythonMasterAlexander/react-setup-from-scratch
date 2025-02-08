@@ -22,14 +22,12 @@ git init
 touch README.md .gitignore
 ```
 Add in .gitignore
-# dependencies
 /node_modules
 /build
 /dist
-# misc
 .DS_Store
 
-NB: More dependencies can be added as your project grow 
+NB: More ignores can be added as your project grow but for now these are the most important to add if you want to push the project to GitHub 
 
 ### I use PnpM as the package manager 
 ```bash
