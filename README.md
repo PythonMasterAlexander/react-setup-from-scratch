@@ -5,7 +5,7 @@
 To understand how to use and set up React from scratch, not using installs 
 with React-powered frameworks like Next.js, Remix, Vite or Gatsby.
 
-These frameworks comes with everything you need out of the box, but they wont
+These frameworks comes pre-build with everything you need out of the box, but they wont
 help you learn to setup React from scratch.
 
 ## Brief
@@ -55,4 +55,31 @@ NB: Config file for TypeScript must be added, read the documentation
 
 ### It's a good idea to use React developer tools in your preferred web browser
 
-To be continue: React Compiler and React file setup structure
+### React Compiler
+
+The React compiler uses it's knowledge of JavaScript and React's rules to
+automatically memorize values or groups of values in your React components and
+hooks. 
+
+The most used are Babels React compiler but as of know 2025 a new compiler is
+under development and can be used as a beta version. For this project I am going
+with the older Babel Compiler.
+
+Babel let's you use the latest ECMAScript features and JSX syntax in React
+projects, babel compiler turns ECMAScript 2015+ into backwards compatible
+version of JavaScript in current and older browsers.
+
+Adding Babel Compiler 
+```bash
+pnpm add -D @babel/core @babel/preset-env @babel/preset-react 
+```
+
+Adding Babel TypeScript presets
+```bash
+pnpm add -D @babel/preset-typescript 
+```
+
+NB: Babel config file must be added, read the documentation
+
+Next: Write webpack and config files docs and finish the README file like the
+README file template from the final exam, then consider this project finish.
