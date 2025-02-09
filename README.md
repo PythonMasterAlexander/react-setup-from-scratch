@@ -59,8 +59,8 @@ The React compiler uses it's knowledge of JavaScript and React's rules to
 automatically memorize values or groups of values in your React components and
 hooks. 
 
-The most used are Babels React compiler but as of know 2025 a new compiler is
-under development and can be used as a beta version. For this project I am going
+The most used are Babels React compiler but as of 2025, a new compiler is
+under development and can be used as beta version. For this project I am going
 with the older Babel Compiler.
 
 Babel let's you use the latest ECMAScript features and JSX syntax in React
