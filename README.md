@@ -79,5 +79,26 @@ pnpm add -D @babel/preset-typescript
 
 NB: Babel config file must be added, read the documentation
 
-Next: Write webpack and config files docs and finish the README file like the
-README file template from the final exam, then consider this project finish.
+### Webpack
+
+Webpack is used for streamlining and optimizing the development and deployment
+processes. 
+
+React applications are build using a modular approach where components and
+dependencies are split across many files. Webpack bundles these files into one
+or few files, reducing the number of HTTP requests.
+
+Webpack enables code spliting, which divides the application into smaller
+chunks. This ensures that only the necessary parts of the application are
+loaded, improving load times and user experience for larger React apps. 
+
+Webpacks works with Babel to transpile modern JavaScript and JSX into browser
+compatible code. This ensures React applications run on older browsers.
+
+Webpack provides tools like `webpack-dev-server` for live reloading during
+development.
+
+Adding Webpack
+```bash
+pnpm add -D webpack webpack-cli webpack-dev-server
+```
