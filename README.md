@@ -14,7 +14,7 @@ Setup React locally on a machine in a project directory
 
 ## Installation
 
-### Setup a directory locally
+### Setup project directory locally
 ```bash
 mkdir react-setup-from-scratch
 cd react-setup-from-scratch
@@ -31,7 +31,7 @@ Add in .gitignore
 
 NB: More dependencies can be added as your project grow 
 
-### I use PnpM as the package manager 
+### PnpM as the package manager 
 ```bash
 pnpm init
 ```
@@ -39,20 +39,15 @@ pnpm init
 ```bash
 pnpm add react react-dom
 ```
-
 ### Add linting and formatting
 ```bash
 pnpm add -D eslint prettier
 ```
-NB: Config files for linting and formatting must be added, read the documentation 
-
 ### Adding TypeScript in the project
 ```bash
 pnpm add -D typescript
 pnpm add @types/react @types/react-dom
 ```
-NB: Config file for TypeScript must be added, read the documentation 
-
 ### It's a good idea to use React developer tools in your preferred web browser
 
 ### React Compiler
@@ -73,13 +68,10 @@ Adding Babel Compiler
 ```bash
 pnpm add -D @babel/core @babel/preset-env @babel/preset-react 
 ```
-
 Adding Babel TypeScript presets
 ```bash
 pnpm add -D @babel/preset-typescript 
 ```
-
-NB: Babel config file must be added, read the documentation
 
 ### Webpack
 
@@ -104,3 +96,7 @@ Adding Webpack
 ```bash
 pnpm add -D webpack webpack-cli webpack-dev-server
 ```
+
+### Directory and File setup 
+### Configuration Files
+### Scripting
