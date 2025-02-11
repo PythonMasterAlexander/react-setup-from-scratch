@@ -1,7 +1,6 @@
 # Setting up  react from scratch
 
 ## Goal
-
 To understand how to use and set up React from scratch, not using installs 
 with React-powered frameworks like Next.js, Remix, Vite or Gatsby.
 
@@ -9,12 +8,11 @@ These frameworks comes pre-build with everything you need out of the box, but th
 help you learn to setup React from scratch.
 
 ## Brief
-
 Setup React locally on a machine in a project directory
 
 ## Installation
+### Setup project directory locally
 
-### Setup a directory locally
 ```bash
 mkdir react-setup-from-scratch
 cd react-setup-from-scratch
@@ -29,32 +27,28 @@ Add in .gitignore
 
 NB: More ignores can be added as your project grow but for now these are the most important to add if you want to push the project to GitHub 
 
-### I use PnpM as the package manager 
+### PnpM as the package manager 
 ```bash
 pnpm init
 ```
+This command will create a package.json and the pnpm lock file
+
 ### Add react
 ```bash
 pnpm add react react-dom
-```
 
 ### Add linting and formatting
 ```bash
-pnpm add -D eslint prettier
+pnpm add -D eslint @eslint/js --save-exact prettier
 ```
-NB: Config files for linting and formatting must be added, read the documentation 
-
 ### Adding TypeScript in the project
 ```bash
 pnpm add -D typescript
 pnpm add @types/react @types/react-dom
 ```
-NB: Config file for TypeScript must be added, read the documentation 
-
 ### It's a good idea to use React developer tools in your preferred web browser
 
 ### React Compiler
-
 The React compiler uses it's knowledge of JavaScript and React's rules to
 automatically memorize values or groups of values in your React components and
 hooks. 
@@ -71,16 +65,12 @@ Adding Babel Compiler
 ```bash
 pnpm add -D @babel/core @babel/preset-env @babel/preset-react 
 ```
-
 Adding Babel TypeScript presets
 ```bash
 pnpm add -D @babel/preset-typescript 
 ```
 
-NB: Babel config file must be added, read the documentation
-
 ### Webpack
-
 Webpack is used for streamlining and optimizing the development and deployment
 processes. 
 
@@ -102,3 +92,32 @@ Adding Webpack
 ```bash
 pnpm add -D webpack webpack-cli webpack-dev-server
 ```
+
+### Configuration Files
+
+You must add configuration files:
+
+TypeScript
+- tsconfig.json
+
+Prettier
+- .prettierrc 
+- .prettierignore
+
+The .prettierrc file can use json or yaml formating
+
+ESLint configuration file
+- .eslintcache
+- .eslintignore
+- .eslint.config.js
+
+Babel Compiler configuration file
+- babel.config.json
+
+Webpack Bundler configuration file
+- webpack.config.js
+
+For each configuration file, read the documentation on how to use them 
+
+### Directory and File setup 
+### Scripting
