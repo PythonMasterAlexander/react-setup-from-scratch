@@ -36,6 +36,7 @@ This command will create a package.json and the pnpm lock file
 ### Add react
 ```bash
 pnpm add react react-dom
+```
 
 ### Add linting and formatting
 ```bash
