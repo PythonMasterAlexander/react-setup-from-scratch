@@ -120,5 +120,20 @@ Webpack Bundler configuration file
 
 For each configuration file, read the documentation on how to use them 
 
-### Directory and File setup 
+### Directory setup 
+
+Create necessary directories
+```bash
+mkdir dist
+mkdir src
+cd src
+mkdir styles scripts
+```
+
+In each sub directory like styles or scripts use index as the main file name:
+scripts/index.ts
+styles/index.scss
+
+Of course this depends on what kind of languages you are using and what file
+extension you need but this is just a helper repository. 
 ### Scripting
