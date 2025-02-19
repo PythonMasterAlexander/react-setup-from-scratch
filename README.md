@@ -116,7 +116,7 @@ Babel Compiler configuration file
 - babel.config.json
 
 Webpack Bundler configuration file
-- webpack.config.js
+- webpack.config.ts
 
 For each configuration file, read the documentation on how to use them 
 
@@ -153,7 +153,7 @@ touch babel.config.json
 ```
 Webpack
 ```bash
-touch webpack.config.js
+touch webpack.config.ts
 ```
 
 In each sub directory like styles or scripts use index as the main file name:
