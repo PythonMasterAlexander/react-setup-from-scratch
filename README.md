@@ -120,9 +120,9 @@ Webpack Bundler configuration file
 
 For each configuration file, read the documentation on how to use them 
 
-### Directory setup 
+### Directory and file setup 
 
-Create necessary directories
+Create necessary directories:
 ```bash
 mkdir dist
 mkdir src
@@ -130,10 +130,44 @@ cd src
 mkdir styles scripts
 ```
 
+Create necessary configuration files in project root:
+
+TypeScript
+```bash
+touch tsconfig.json  
+```
+
+Prettier
+```bash
+touch .prettierrc .prettierignore  
+```
+
+ESLint
+```bash
+touch .eslintcache .eslintignore .eslint.config.js  
+```
+
+Babel
+```bash
+touch babel.config.json  
+```
+Webpack
+```bash
+touch webpack.config.js
+```
+
 In each sub directory like styles or scripts use index as the main file name:
-scripts/index.ts
-styles/index.scss
+```bash
+cd src/styles
+touch index.css
+cd ../scripts
+touch index.ts
+```
 
 Of course this depends on what kind of languages you are using and what file
-extension you need but this is just a helper repository. 
+extension you need, this is just a helper repository. 
+
+### React file setup and structure 
+
 ### Scripting
+Goal: To set up bash scripts that automate these processes
