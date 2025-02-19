@@ -91,7 +91,7 @@ development.
 
 Adding Webpack
 ```bash
-pnpm add -D webpack webpack-cli webpack-dev-server
+pnpm add -D webpack webpack-cli webpack-dev-server @types/webpack ts-node @types/node
 ```
 
 ### Configuration Files

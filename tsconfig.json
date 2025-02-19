@@ -4,6 +4,7 @@
     "noImplicitAny": true,
     "outFile": ["dist/scripts/"],
 				"esModuleInterop": true,
+				"allowSyntheticDefaultImports": true,
 				"target": "es6",
 				"moduleResolution": "node"
   },
