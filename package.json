@@ -2,6 +2,7 @@
   "name": "react-setup-from-scratch",
   "version": "1.0.0",
   "description": "Create a react project from scratch",
+		"type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

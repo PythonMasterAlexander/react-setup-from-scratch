@@ -40,7 +40,7 @@ pnpm add react react-dom
 
 ### Add linting and formatting
 ```bash
-pnpm add -D eslint @eslint/js --save-exact prettier
+pnpm add -D eslint @eslint/js --save-exact prettier jiti
 ```
 ### Adding TypeScript in the project
 ```bash
@@ -110,7 +110,7 @@ The .prettierrc file can use json or yaml formating
 ESLint configuration file
 - .eslintcache
 - .eslintignore
-- .eslint.config.js
+- eslint.config.ts
 
 Babel Compiler configuration file
 - babel.config.json
@@ -144,7 +144,7 @@ touch .prettierrc .prettierignore
 
 ESLint
 ```bash
-touch .eslintcache .eslintignore .eslint.config.js  
+touch .eslintcache .eslintignore eslint.config.ts
 ```
 
 Babel
