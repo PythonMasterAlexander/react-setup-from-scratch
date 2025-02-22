@@ -31,7 +31,20 @@ NB: More ignores can be added as your project grow but for now these are the mos
 ```bash
 pnpm init
 ```
-This command will create a package.json and the pnpm lock file
+
+This command will create a package.json and the pnpm lock file, then 
+add a .npmrc file to be able to customize settings and behaviours of pnpm
+```bash
+touch .npmrc
+```
+
+In the .npmrc file you must add these lines:
+```bash
+auto-install-peers=true
+node-linker=hoisted
+```
+This will ensure that pnpm installs dependencies in way that is more compatible
+with npm and is less likely to produce errors
 
 ### Add react
 ```bash
