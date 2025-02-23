@@ -2,12 +2,10 @@
   "compilerOptions": {
     "module": "es6",
     "noImplicitAny": true,
-    "outFile": ["dist/scripts/"],
+    "outDir": "dist/src/scripts/",
 				"esModuleInterop": true,
 				"allowSyntheticDefaultImports": true,
 				"target": "es6",
 				"moduleResolution": "node"
-  },
-  "include": ["src/**/*"],
-  "exclude":
+  }
 }
