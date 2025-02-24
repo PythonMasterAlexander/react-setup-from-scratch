@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "module": "es6",
+    "module": "ESNext",
     "noImplicitAny": true,
-    "outDir": "../../dist/src/scripts/",
+    "outDir": "dist/src/scripts/",
 				"esModuleInterop": true,
 				"allowSyntheticDefaultImports": true,
-				"target": "es6",
+				"target": "ESNext",
 				"moduleResolution": "node",
 				"allowJs": true
   },
-		"include": ["src/**/*"]
+		"include": ["src/**/*.tsx"]
 }
